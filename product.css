@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+.product-card {
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 50px auto;
+    background: #fafafa;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+@-webkit-keyframes my {
+    0% { color: #f80a0a; } 
+    50% { color: #fff;  } 
+    100% { color: #f80a0a;  } 
+}
+@-moz-keyframes my { 
+    0% { color: #f80a0a;  } 
+    50% { color: #fff;  }
+    100% { color: #f80a0a;  } 
+}
+@-o-keyframes my { 
+    0% { color: #f80a0a; } 
+    50% { color: #fff; } 
+    100% { color: #f80a0a;  } 
+}
+@keyframes my { 
+    0% { color: #f8260a;  } 
+    50% { color: #fff;  }
+    100% { color: #f80a0a;  } 
+} 
+.badge {
+        background:#3d3d3d;
+        font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+.card{
+    height: auto;
+  display: flex;
+  min-height: calc(100vh - 11.25rem);
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 0.3125rem;
+  width: 1200px;
+  margin: 0 auto;
+  column-gap: 20px;
+  cursor: pointer;    
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+button.snip1099 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  background-color: #000000;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 15px 40px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+button.snip1099 span {
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+button.snip1099 i {
+  font-size: 21px;
+  left: 22px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.snip1099:hover span,
+button.snip1099.hover span {
+  -webkit-transform: translate3d(10px, 0px, 0px);
+  transform: translate3d(10px, 0px, 0px);
+  opacity: 1;
+}
+
+button.snip1099:hover i,
+button.snip1099.hover i {
+  opacity: 0.8;
+}
+
+button.snip1099:active span {
+  -webkit-transform: translate3d(14px, 0px, 0px);
+  transform: translate3d(14px, 0px, 0px);
+}
+
+
+
+button.snip1099.red {
+  background-color: #c3d659;
+ margin-left: 70px;
+}
+
+.title{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
