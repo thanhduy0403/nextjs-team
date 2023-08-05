@@ -2,7 +2,7 @@
 import React from "react";
 import Head from "next/head";
 import { Bangers } from "next/font/google";
-import Product from "@/components/product";
+import Product from "@/pages/product";
 import Header from "@/components/Layout/Header";
 import Banner from "@/components/Layout/Banner";
 
