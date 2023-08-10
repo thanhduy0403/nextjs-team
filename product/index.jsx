@@ -19,7 +19,7 @@ const Product = ( props) => {
   },[getall])
   return (
     <>
-    <h1 className="title">Product</h1>
+    <h1 className="title">Tất Cả Các Sản Phẩm</h1>
     <div className="card">
       {getproduct.length > 0 &&
         getproduct.map((p) => {
@@ -31,14 +31,15 @@ const Product = ( props) => {
                 <img src={p.image} alt="" />
               </div>
               <div className="product-details">
-                <span className="product-catagory">{p.name}</span>
+                <h3 className="product-catagory">{p.name}</h3>
                
                
                 <div className="product-bottom-details">
                   <div className="product-price">
-                    <small>${p.price}</small>${p.discountedPrice}
+                    <small>${p.price}</small>
+                    <h4 className="discountedPrice">${p.discountedPrice}</h4>
                   </div>
-                  
+                  <button className="getdetail"><span>Xem Sản Phẩm</span><i className="ion-android-arrow-forward" /></button>
                 </div>
               </div>
             </Link>

@@ -23,6 +23,44 @@ a
     margin: 50px auto;
     background: #fafafa;
 }
+.discountedPrice{
+    position: absolute;
+   
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+@-webkit-keyframes my {
+    0% { color: #f80a0a; } 
+    50% { color: #fff;  } 
+    100% { color: #f80a0a;  } 
+}
+@-moz-keyframes my { 
+    0% { color: #f80a0a;  } 
+    50% { color: #fff;  }
+    100% { color: #f80a0a;  } 
+}
+@-o-keyframes my { 
+    0% { color: #f80a0a; } 
+    50% { color: #fff; } 
+    100% { color: #f80a0a;  } 
+}
+@keyframes my { 
+    0% { color: #f8260a;  } 
+    50% { color: #fff;  }
+    100% { color: #f80a0a;  } 
+} 
+.discountedPrice {
+        background:#a5a5a5;
+        font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
 
 .badge {
     position: absolute;
@@ -84,10 +122,10 @@ a
 
 .product-catagory {
     display: block;
-    font-size: 12px;
+    font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ccc;
+    color: #444040;
     margin-bottom: 18px;
 }
 
@@ -153,85 +191,91 @@ a
     color: #fbb72c;
 }
 .card{
-    height: auto;
+height: auto;
   display: flex;
   min-height: calc(100vh - 11.25rem);
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-top: 0.3125rem;
+  padding-top: 0.1rem;
   width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   column-gap: 20px;
   cursor: pointer;    
 }
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-button.snip1099 {
-  font-family: 'Raleway', Arial, sans-serif;
-  border: none;
-  background-color: #000000;
-  border-radius: 5px;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 10px 30px;
-  display: inline-block;
-  margin: 15px 40px;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  font-weight: 400;
-  font-size: 1em;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-
-}
-
-button.snip1099 span {
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0.8;
-}
-
-button.snip1099 i {
-  font-size: 21px;
-  left: 22px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-button.snip1099:hover span,
-button.snip1099.hover span {
-  -webkit-transform: translate3d(10px, 0px, 0px);
-  transform: translate3d(10px, 0px, 0px);
-  opacity: 1;
-}
-
-button.snip1099:hover i,
-button.snip1099.hover i {
-  opacity: 0.8;
-}
-
-button.snip1099:active span {
-  -webkit-transform: translate3d(14px, 0px, 0px);
-  transform: translate3d(14px, 0px, 0px);
-}
-
-
-
-button.snip1099.red {
-  background-color: #c3d659;
- margin-left: 70px;
-}
 
 .title{
+    font-size: 25px;
     width: 1200px;
     margin: 0 auto;
     margin-top: 30px;
+    text-align: center;
 }
-
+button.getdetail {
+    font-family: 'Raleway', Arial, sans-serif;
+    border: none;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 50px 70px;
+    
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  button.getdetail span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0.8;
+  }
+  button.getdetail i {
+    font-size: 22px;
+    left: 15px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  button.getdetail:before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  button.getdetail:hover span,
+  button.getdetail.hover span {
+    -webkit-transform: translate3d(20px, 0px, 0px);
+    transform: translate3d(20px, 0px, 0px);
+    opacity: 1;
+  }
+  button.getdetail:hover i,
+  button.getdetail.hover i {
+    opacity: 1;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  button.getdetail:hover:before,
+  button.getdetail.hover:before {
+    width: 44px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
 
 

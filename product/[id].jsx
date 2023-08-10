@@ -34,9 +34,9 @@ const GetproductDetail = (props) => {
          <div className="product_info">
            <div className="seller_info">
            </div>
-            <div className="product_title">{getproduct.name}</div>
+            <h3 className="product_title">{getproduct.name}</h3>
            
-           <div className="product_price"><small><del>${getproduct.price}</del></small> ${getproduct.discountedPrice}
+           <div className="product_price">Giá Bán $ {getproduct.discountedPrice}
            </div>
            <div className="product_descr">I'm a product description. I'm a great place to add more details about your product such as sizing, material, care </div>
         
@@ -45,7 +45,7 @@ const GetproductDetail = (props) => {
            <div className="product_quantity">Quantity:<br /> 
              <input type="number" />
            </div>
-           <div className="add_to_cart">Add to cart</div>
+           <button className="snip1099 red"><span>Add to Cart</span><i className="ion-ios-cart" /></button>
          </div>
        </div>
       )}
